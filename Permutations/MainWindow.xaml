@@ -1,0 +1,110 @@
+﻿<mahapps:MetroWindow x:Class="Permutations.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mahapps="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:Permutations"
+        mc:Ignorable="d"
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        TitleAlignment="Center" Title="Задачи по криптографии"
+        Height="450" Width="550">
+    <mahapps:MetroWindow.LeftWindowCommands>
+        <mahapps:WindowCommands>
+            <Button x:Name="BAbout" Content="О программе" Height="30" Click="BAbout_Click"/>
+        </mahapps:WindowCommands>
+    </mahapps:MetroWindow.LeftWindowCommands>
+    <mahapps:MetroWindow.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+        <Style TargetType="RadioButton">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </mahapps:MetroWindow.Resources>
+    <Grid>
+        <TabControl Grid.Row="1" Margin="10">
+            <TabItem Header="Задание 1">
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Выберите задачу для выполнения (условие появится при наведении)" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center"/>
+
+                    <RadioButton x:Name="RBTask1" Grid.Column="0" Grid.Row="1"/>
+                    <RadioButton x:Name="RBTask2" Grid.Column="0" Grid.Row="2"/>
+                    <RadioButton x:Name="RBTask3" Grid.Column="0" Grid.Row="3"/>
+
+                    <Grid Grid.Column="1" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <Label Content="1-е множество" Margin="5,0"/>
+                            <TextBox x:Name="TBFirstSet1" Margin="5,0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <Label Content="2-е множество" Margin="5,0"/>
+                            <TextBox x:Name="TBSecondSet1" Margin="5,0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <Label Content="Перестановка" Margin="5,0"/>
+                            <TextBox x:Name="TBShuffle1" Margin="5,0" IsReadOnly="True"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <Label Content="1-е множество" Margin="5,0"/>
+                            <TextBox x:Name="TBFirstSet2" Margin="5,0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <Label Content="Перестановка" Margin="5,0"/>
+                            <TextBox x:Name="TBShuffle2" Margin="5,0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <Label Content="2-е множество" Margin="5,0"/>
+                            <TextBox x:Name="TBSecondSet2" Margin="5,0" IsReadOnly="True"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <Label Content="2-е множество" Margin="5,0"/>
+                            <TextBox x:Name="TBSet" Margin="5,0"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <Label Content="Транспозиции" Margin="5,0"/>
+                            <TextBox x:Name="TBTranspositions" Margin="5,0" IsReadOnly="True"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Button x:Name="BStart" Content="Найти" Grid.Column="1" Grid.Row="4" Margin="50,10" Click="BStart_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+    </mahapps:MetroWindow>

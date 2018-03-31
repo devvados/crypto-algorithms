@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitOperations", "BitOperations\BitOperations.csproj", "{FEE7AEF8-A27D-4F9D-9798-DA869903A0D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permutations", "Permutations\Permutations.csproj", "{CC87BA45-A6E0-4425-ACE1-03FE9F625216}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEE7AEF8-A27D-4F9D-9798-DA869903A0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE7AEF8-A27D-4F9D-9798-DA869903A0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE7AEF8-A27D-4F9D-9798-DA869903A0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE7AEF8-A27D-4F9D-9798-DA869903A0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC87BA45-A6E0-4425-ACE1-03FE9F625216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC87BA45-A6E0-4425-ACE1-03FE9F625216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC87BA45-A6E0-4425-ACE1-03FE9F625216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC87BA45-A6E0-4425-ACE1-03FE9F625216}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D42E577E-B7F5-41A1-AC83-406216F18369}
+	EndGlobalSection
+EndGlobal
